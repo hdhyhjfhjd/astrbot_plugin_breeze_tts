@@ -1,0 +1,9 @@
+name: astrbot_plugin_breeze_tts
+display_name: Breeze TTS
+short_desc: 在 AstrBot 内起 OpenAI 兼容 TTS 端点，用 BreezeBlue 任意音色说话
+desc: 在 AstrBot 内起 OpenAI 兼容 TTS 端点，用 BreezeBlue 任意音色说话，不预设音色
+author: hdhyhjfhjd
+version: 3.7.8
+repo: https://github.com/hdhyhjfhjd/astrbot_plugin_breeze_tts
+license: MIT
+astrbot_version: ">=4.0.0"

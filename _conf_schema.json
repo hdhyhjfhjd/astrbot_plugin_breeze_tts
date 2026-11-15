@@ -1,0 +1,68 @@
+{
+  "voice_id": {
+    "type": "string",
+    "description": "语音回复音色 ID，优先于提供商里的 voice",
+    "default": ""
+  },
+  "port": {
+    "type": "int",
+    "description": "端点端口，默认 8788",
+    "default": 8788
+  },
+  "api_key": {
+    "type": "string",
+    "description": "Breeze Key，留空则用提供商里的 Key",
+    "default": ""
+  },
+  "base_url": {
+    "type": "string",
+    "description": "Breeze 接口地址",
+    "default": "https://api.breeze.blue"
+  },
+  "default_voice": {
+    "type": "string",
+    "description": "兜底音色 ID，voice 非 voc_ 时用它",
+    "default": ""
+  },
+  "model": {
+    "type": "string",
+    "description": "模型 ID",
+    "default": "breeze-tts-2"
+  },
+  "instructions": {
+    "type": "text",
+    "description": "表演指令，与正文同语种，可留空",
+    "default": ""
+  },
+  "guidance_scale": {
+    "type": "float",
+    "description": "指令强度 1-10",
+    "default": 4.0
+  },
+  "speed": {
+    "type": "float",
+    "description": "语速 0.5-2，1 为正常",
+    "default": 1.0
+  },
+  "timeout": {
+    "type": "int",
+    "description": "单次请求超时秒数",
+    "default": 60
+  },
+  "max_chars": {
+    "type": "int",
+    "description": "单次请求字数，超了按标点切段",
+    "default": 500
+  },
+  "proxy": {
+    "type": "string",
+    "description": "出站 HTTP 代理，留空即直连",
+    "default": ""
+  },
+  "voice_fallback_only": {
+    "type": "bool",
+    "description": "按角色保留音色",
+    "hint": "开启后：各提供商自己填了 voc_ 音色就按各自的走，AI 页那项只在没填时兜底。关闭则 AI 页音色覆盖所有角色。",
+    "default": false
+  }
+}
